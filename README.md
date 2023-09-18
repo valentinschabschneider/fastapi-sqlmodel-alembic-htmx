@@ -23,4 +23,4 @@ $ curl -d '{"name":"Midnight Fit", "artist":"Mogwai", "year":"2021"}' -H "Conten
 
 Get all songs: [http://localhost:8004/songs](http://localhost:8004/songs)
 
-poetry run uvicorn app.main:app --reload --reload-include \*.html
+poetry run uvicorn app.main:app --reload

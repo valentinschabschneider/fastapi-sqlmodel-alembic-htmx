@@ -153,6 +153,21 @@ typing-extensions = ">=4.5.0"
 all = ["email-validator (>=2.0.0)", "httpx (>=0.23.0)", "itsdangerous (>=1.1.0)", "jinja2 (>=2.11.2)", "orjson (>=3.2.1)", "pydantic-extra-types (>=2.0.0)", "pydantic-settings (>=2.0.0)", "python-multipart (>=0.0.5)", "pyyaml (>=5.3.1)", "ujson (>=4.0.1,!=4.0.2,!=4.1.0,!=4.2.0,!=4.3.0,!=5.0.0,!=5.1.0)", "uvicorn[standard] (>=0.12.0)"]
 
 [[package]]
+name = "fastapi-htmx"
+version = "0.2.2"
+description = "Extension for FastAPI to make HTMX easier to use."
+optional = false
+python-versions = ">=3.10,<4.0"
+files = [
+    {file = "fastapi_htmx-0.2.2-py3-none-any.whl", hash = "sha256:dac75591d6ea5e46e0e73490d103e1cdf8bb6f94797c88e65a8c1fa770955e71"},
+    {file = "fastapi_htmx-0.2.2.tar.gz", hash = "sha256:1b3c13dd4aa0fb81d2ef0c5e896ecb597f741e3abb6699f82eaa9245824adf35"},
+]
+
+[package.dependencies]
+fastapi = ">=0.103,<0.104"
+jinja2 = ">=3.1,<4.0"
+
+[[package]]
 name = "greenlet"
 version = "2.0.2"
 description = "Lightweight in-process concurrent programming"
@@ -843,4 +858,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "8b9ca8d2dc1ffcb68bdd2ff259e7de071671405a5dc84e0c68a7bf76e8a1e1a2"
+content-hash = "55e888423a4a4a4d3ac9caee719f0fc60f9aae08f7ae670287ff1c58de7fdfbc"
