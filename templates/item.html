@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Item Details</title>
+		<link href="{{url_for('static',path='/css/app.css')}}" rel="stylesheet" />
+	</head>
+	<body>
+		<h1 class="text-lg">Item ID: {{ id }}</h1>
+		<p class="text-orange-700">testa</p>
+
+		{% if DEBUG %} {{ hot_reload.script(url_for('hot-reload')) | safe }} {%
+		endif%}
+	</body>
+</html>

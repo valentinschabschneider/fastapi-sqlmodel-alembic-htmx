@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "fastapi-sqlmodel-alembic"
+version = "0.1.0"
+description = ""
+authors = ["Valentin Schabschneider <valentin.schabschneider@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fastapi_sqlmodel_alembic"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+alembic = "^1.12.0"
+fastapi = "^0.103.1"
+sqlmodel = "^0.0.8"
+asyncpg = "^0.28.0"
+jinja2 = "^3.1.2"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+
+
+[tool.poetry.group.dev.dependencies]
+arel = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
